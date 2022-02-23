@@ -1,8 +1,13 @@
 import React from "react";
 
 export default class CardComp extends React.Component {
+
+     
     render() {
+        
+
       const { weatherData } = this.props
+
         return(
             <div className="container">
                 <div className="city-card">
@@ -13,10 +18,10 @@ export default class CardComp extends React.Component {
                         {weatherData ? weatherData.name : ''}
                     </div>
                     <div className="city-temp">
-                        {weatherData ? weatherData.main.temp : ''}
+                        {weatherData ? 'TEMPERATURE: ' + Math.round(weatherData.main.temp-273) : ''}
                     </div>
                     <div className="feels-like">
-                        {weatherData ? weatherData.main.feels_like : ''}
+                        {weatherData ? 'TEMPERATURE: ' + Math.round(weatherData.main.feels_like-273) : ''}
                     </div>
                     
                 </div>
