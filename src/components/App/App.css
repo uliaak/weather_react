@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(187, 230, 241);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputCity {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: rgb(12, 156, 167);
+  text-align: center;
+  margin: 50px;
+}
+.container > div {
+  margin: 100px auto;
+  width: 250px;
+  height: 400px;
+  background-color: rgb(12, 156, 167);
+  border: 2px solid black;
+  border-radius: 45px;
+}
+
+.city-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.city-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+.city-temp,
+.feels-like {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.card-head {
+  background-color: rgb(187, 230, 241); 
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.error-message {
+  color: white;
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+}
+
