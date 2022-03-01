@@ -15,10 +15,10 @@ export default class CardComp extends React.Component {
                     <div className="card-head">OpenWeather API</div>
 
                     <div className="city-name">
-                        {weatherData ? weatherData.name : ''}
+                        {weatherData ? weatherData.name : 'city not found'}
                     </div>
                     <div className="city-temp">
-                        {weatherData ? 'TEMPERATURE: ' + Math.round(weatherData.main.temp-273) : ''}
+                        {weatherData ? 'TEMPERATURE: ' + Math.round(weatherData.main.temp-273) : 'temperature not found'}
                     </div>
                     <div className="feels-like">
                         {weatherData ? 'TEMPERATURE: ' + Math.round(weatherData.main.feels_like-273) : ''}
